@@ -17,7 +17,7 @@ class BookShelfIterator implements Iterator
 
     public function hasNext(): bool
     {
-        return $this->index < bookShelf.getLength();
+        return $this->index < $this->bookShelf->getLength();
     }
 
     public function next(): Object
