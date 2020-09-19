@@ -14,17 +14,17 @@ class CharDisplay extends AbstractDisplay
         $this->ch = $ch;
     }
 
-    public function open(): void
+    protected function open(): void
     {
         echo '<<';
     }
 
-    public function printOut(): void
+    protected function printOut(): void
     {
         echo $this->ch;
     }
 
-    public function close(): void
+    protected function close(): void
     {
         echo '>>' . PHP_EOL;
     }

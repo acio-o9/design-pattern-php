@@ -17,17 +17,17 @@ class StringDisplay extends AbstractDisplay
         $this->width = mb_strlen($str);
     }
 
-    public function open(): void
+    protected function open(): void
     {
         $this->printLine();
     }
 
-    public function printOut(): void
+    protected function printOut(): void
     {
         echo "|{$this->str}|" . PHP_EOL;
     }
 
-    public function close(): void
+    protected function close(): void
     {
         $this->printLine();
     }

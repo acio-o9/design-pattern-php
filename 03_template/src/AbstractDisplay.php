@@ -4,9 +4,9 @@ namespace App;
 
 abstract class AbstractDisplay
 {
-    public abstract function open(): void;
-    public abstract function printOut(): void;
-    public abstract function close(): void;
+    protected abstract function open(): void;
+    protected abstract function printOut(): void;
+    protected abstract function close(): void;
     public function display()
     {
         $this->open();
