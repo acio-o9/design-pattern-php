@@ -1,5 +1,10 @@
 <?php
 
+namespace App;
+
+use App\Aggregate;
+use App\Iterator;
+
 class BookShelf implements Aggregate
 {
     /** @var Book[] */

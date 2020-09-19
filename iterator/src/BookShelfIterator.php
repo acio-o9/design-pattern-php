@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class BookShelfIterator implements Iterator
 {
     /** @var BookShelf */

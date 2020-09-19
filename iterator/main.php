@@ -1,4 +1,8 @@
 <?php
+require 'vendor/autoload.php';
+
+use App\Book;
+use App\BookShelf;
 
 $bookShelf = new BookShelf(4);
 $bookShelf->appendBook(new Book("Hello World. ver1"));
