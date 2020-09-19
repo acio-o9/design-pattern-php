@@ -12,9 +12,9 @@ class BookShelf implements Aggregate
     /** @var int */
     private $last = 0;
 
-    public function __construct(int $maxsize)
+    public function __construct()
     {
-        $this->books = range(0, $maxsize);
+        $this->books = [];
     }
 
     public function getBookAt(int $index): Book
