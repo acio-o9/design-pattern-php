@@ -35,9 +35,7 @@ class StringDisplay extends AbstractDisplay
     private function printLine(): void
     {
         echo '+';
-        for ($i = 0; $i < $this->width; $i++) {
-            echo '-';
-        }
+        echo str_repeat('-', $this->width);
         echo '+' . PHP_EOL;
     }
 }
