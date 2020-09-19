@@ -2,8 +2,8 @@
 
 namespace App;
 
-interface PrintOut
+abstract class PrintOut
 {
-    public function printOutWeak(): void;
-    public function printOutStrong(): void;
+    public function printOutWeak(): void {}
+    public function printOutStrong(): void {}
 }
