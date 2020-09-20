@@ -13,3 +13,5 @@ $card3 = $factory->create('acio-o9');
 $card1->allow();
 $card2->allow();
 $card3->allow();
+
+// var_export($factory->getOwners());
