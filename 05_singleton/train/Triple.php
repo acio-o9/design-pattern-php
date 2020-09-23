@@ -19,7 +19,7 @@ class Triple
         $this->index = $index;
     }
 
-    public static function getInstance(int $id): ?Triple
+    public static function getInstance(int $id): Triple
     {
         if ($id >= self::INSTANCE_MAX_SIZE) {
             echo 'Triple allows to create only [' . self::INSTANCE_MAX_SIZE . '] instances.' . PHP_EOL;
