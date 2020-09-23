@@ -4,11 +4,11 @@ require('vendor/autoload.php');
 
 use Train\TicketMaker;
 
-$maker1 = new TicketMaker();
+$maker1 = TicketMaker::getInstance();
 echo $maker1->getNextTicketNumber() . PHP_EOL;
 echo $maker1->getNextTicketNumber() . PHP_EOL;
 
-$maker2 = new TicketMaker();
+$maker2 = TicketMaker::getInstance();
 echo $maker2->getNextTicketNumber() . PHP_EOL;
 echo $maker2->getNextTicketNumber() . PHP_EOL;
 
@@ -17,5 +17,5 @@ echo $maker2->getNextTicketNumber() . PHP_EOL;
 // ==================
 // > 1000
 // > 1001
-// > 1000
-// > 1001
+// > 1002
+// > 1003
