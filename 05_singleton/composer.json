@@ -2,7 +2,8 @@
     "name": "acio-o9/design-pattern-php",
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src/",
+            "Train\\": "train/"
         }
     }
 }
