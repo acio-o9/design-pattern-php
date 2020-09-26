@@ -4,7 +4,7 @@ namespace App;
 
 use Framework\Product;
 
-class MessageBox implements Product
+class MessageBox extends Product
 {
     /** @var string */
     private $decochar;
@@ -32,10 +32,5 @@ class MessageBox implements Product
             echo $this->decochar;
         }
         echo PHP_EOL;
-    }
-
-    public function createClone(): Product
-    {
-        return clone $this;
     }
 }

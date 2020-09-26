@@ -2,8 +2,11 @@
 
 namespace Framework;
 
-interface Product
+abstract class Product
 {
-    public function execute(string $s): void;
-    public function createClone(): Product;
+    public abstract function execute(string $s): void;
+    public function createClone(): Product
+    {
+        return clone $this;
+    }
 }

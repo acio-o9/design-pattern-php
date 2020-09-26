@@ -4,7 +4,7 @@ namespace App;
 
 use Framework\Product;
 
-class UnderlinePen implements Product
+class UnderlinePen extends Product
 {
     /** @var string */
     private $ulchar;
@@ -26,10 +26,5 @@ class UnderlinePen implements Product
             echo $this->ulchar;
         }
         echo PHP_EOL;
-    }
-
-    public function createClone(): Product
-    {
-        return clone $this;
     }
 }
