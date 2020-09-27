@@ -14,16 +14,20 @@ class TextBuilder extends Builder
         $this->text .= '=====================================' . PHP_EOL;
         $this->text .= "『{$title}』" . PHP_EOL;
         $this->text .= PHP_EOL;
+
+        $this->isInitialized = true;
     }
 
     public function makeString(string $str)
     {
+        $this->ready();
         $this->text .= "# {$str}" . PHP_EOL;
         $this->text .= PHP_EOL;
     }
 
     public function makeItems(array $items)
     {
+        $this->ready();
         foreach ($items as $item) {
             $this->text .= " - {$item}" . PHP_EOL;
         }
@@ -32,6 +36,7 @@ class TextBuilder extends Builder
 
     public function close()
     {
+        $this->ready();
         $this->text .= '=====================================' . PHP_EOL;
     }
 
