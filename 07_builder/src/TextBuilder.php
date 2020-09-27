@@ -4,7 +4,7 @@ namespace App;
 
 use App\Builder;
 
-class TextBuilder implements Builder
+class TextBuilder extends Builder
 {
     /** @var string */
     private $text;

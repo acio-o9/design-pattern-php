@@ -4,7 +4,7 @@ namespace App;
 
 use App\Builder;
 
-class HTMLBuilder implements Builder
+class HTMLBuilder extends Builder
 {
     /** @var string */
     private $filename;
