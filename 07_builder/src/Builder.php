@@ -2,10 +2,10 @@
 
 namespace App;
 
-abstract class Builder
+interface Builder
 {
-    public abstract function makeTitle(string $title);
-    public abstract function makeString(string $str);
-    public abstract function makeItems(array $items);
-    public abstract function close();
+    public function makeTitle(string $title);
+    public function makeString(string $str);
+    public function makeItems(array $items);
+    public function close();
 }
