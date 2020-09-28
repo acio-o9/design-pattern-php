@@ -1,0 +1,9 @@
+{
+    "name": "acio-o9/design-pattern-php",
+    "autoload": {
+        "psr-4": {
+            "Factory\\": "factory/",
+            "ListFactory\\": "listfactory/"
+        }
+    }
+}
